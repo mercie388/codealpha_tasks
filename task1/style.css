@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery div {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 300px;
+    background: #222;
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery div:hover img {
+    transform: scale(1.05);
+}
+
+.gallery div button {
+    position: absolute;
+    bottom: 15px;
+    right: 15;
+}
