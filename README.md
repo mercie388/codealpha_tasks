@@ -4,6 +4,9 @@ This repository contains the tasks completed as part of my **CodeAlpha Internshi
 
 ## 📂 Tasks
 
+### Task 1
+An image gallery project 
+
 ### Task 2
 A calculator project developed using HTML, CSS, and JavaScript.
 
@@ -20,6 +23,12 @@ A recipe website project containing different recipe pages, styling, JavaScript 
 
 ```text
 codealpha_tasks/
+│
+├── task1/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+    └── images/
 │
 ├── task2/
 │   ├── index.html
