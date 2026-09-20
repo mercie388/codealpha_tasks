@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+header{
+  display: flex;
+  top: 0;
+  position: sticky;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+nav{
+  display: flex;
+  top: 55px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  gap: 20px;
+  padding: 12px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+/*NAV*/
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #ff6600;
+}
+/*SECTION*/
+section {
+  padding: 60px 50px;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff6600;
+  padding-left: 10px;
+}
+/*HOME*/
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 70px 60px;
+    background: #fff5ee;
+    flex-wrap: wrap;
+}
+#home div h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#home div p {
+    color: #555;
+}
+#home img{
+    width:320px !important;
+    height: 320px !important;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+/*ABOUT*/
+#about p {
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+/*SKILLS*/
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.skills_box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  transition: 0.3s;
+}
+.skills_box:hover {
+  transform: translate(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+.skills_box h3 {
+  margin-bottom: 10px;
+  color: #ff6600;
+}
+.skills_box ul {
+  list-style: none;
+}
+.skills_box li {
+  padding: 4px 0;
+}
+
+/*PROJECTS*/
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.project_card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+.project_card:hover {
+  transform: translate(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+.project_card img {
+  width: 100% ;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #eee;
+}
+.project_card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: black;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*RESUME*/
+#resume {
+  background: white;
+}
+#resume a {
+  margin-top: 10px;
+  background: #ff6600;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*CONTACT*/
+#contact p {
+  margin: 5px 0;
+}
+
+/*FOOTER*/
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  position: relative;
+}
+.footer p{
+    margin:6px 0;
+    font-size: 14px;
+}
+.footer_links{
+    margin: 15px;
+}
+.footer_links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.footer_links a:hover {
+    color: #ff6a00;
+}
+.back-to-top{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #ff6a00;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back-to-top:hover{
+    background: white;
+    color:#111;
+}
+#contact input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+#contact > form {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  header, nav, #home {
+    padding: 15px 20px;
+  }
+  #home{
+    flex-direction: column-reverse;
+  }
+  section {
+    padding: 40px 20px;
+  }
+}

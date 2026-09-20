@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Header-->
+<header>
+    <h1>MY PORTFOLIO</h1>
+</header>
+
+<!--Navigation-->
+<nav>
+    <div>
+    <a href="#home">Home |</a>
+    <a href="#about">About |</a>
+    <a href="#skills">Skills |</a>
+    <a href="#projects">Projects |</a>
+    <a href="#contact">Contact </a>
+    </div>
+</nav>
+<br>
+<!--Section-->
+<section id="home">
+<div>
+    <img src="./images/myPic.jpeg" alt="myPic">
+    <div>
+        <p>Hi, I'm Mercy Muthoni.Frontend Web Developer</p>
+        <p>Photo of me</p>
+    </div>
+</div>
+</section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate Frontend developer from Kenya.I love creating clean,responsive 
+        and user-friendly websites that are not just functional but also beautiful.I enjoy 
+        turning complex problems into simple,scalable and beautiful designs.
+    </p>
+</section>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills_container">
+    <div class="skills_box">
+    <h3>Frontend</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+    </ul>
+    </div>
+    <div class="skills_box">
+    <h3>Tools</h3>
+    <ul>
+        <li>Git & Github</li>
+        <li>VS Code</li>
+    </ul>
+    </div>
+    <div class="skills_box">
+    <h3>Frameworks</h3>
+    <ul>
+        <li>Bootstrap</li>
+        <li>React</li>
+    </ul>
+    </div>
+    </div>
+</section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project_container">
+        <div class="project_card">
+           <img src="./images/beefpilau.jpeg" alt="recipe1">
+           <div class="project_card--details">
+           <h3>Beef Pilau Recipe</h3>
+           <p>Recipe on how to cook beef and pilau <span style="color: red;">&hearts;</span></p> 
+           <a href="recipe1.html" class="back_btn">Recipe1 Link</a>
+           </div>
+        </div><br>
+        <div class="project_card">
+           <img src="./images/chapati.jpeg" alt="recipe2">
+           <div class="project_card--details">
+           <h3>Chapati Recipe</h3>
+           <p>Recipe on how to cook chapati <span style="color: red;">&hearts;</span></p> 
+           <a href="recipe2.html" class="back_btn">Recipe2 Link</a>
+           </div>
+        </div>
+    </div>
+</section>
+<section id="resume">
+    <h2>Resume</h2>
+    <a href="./images/mercymuthonicv.pdf" download>Click Here to Download PDF</a>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: mercynjunji5@gmail.com</p>
+    <p>Phone number: 0116441008</p>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!--Footer-->
+<footer id="footer">
+    <div class="footer_content">
+    <p>&copy; 2026 Mercy Muthoni. All Rights Reserved.</p>
+    <div class="footer_links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact </a>
+    </div>
+    </div>
+    <a href="#home" class="back-to-top">↑ Top</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

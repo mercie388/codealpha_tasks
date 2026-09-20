@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial scale="1.0">
+    <title>Recipe 1</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f2f2;
+        display:flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .recipe{
+        width:850px;
+        background: white;
+        border:1px solid #ccc;
+        overflow:hidden;
+    }
+    .title{
+        background-color: #d8f0f2;
+        text-align: center;
+        padding: 15px;
+    }
+    h1.title{
+        color:#b22222;
+        font-size: 32px;
+    }
+    img.recipe{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display:block;
+    }
+    .info{
+        background-color: #d8f0f2;
+        text-align: center;
+        padding: 12px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .back_btn{
+        display: inline-block;
+        margin: 20px;
+        padding: 10px 18px;
+        background: #111;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+    .back_btn:hover{
+        background: #ff6a00;
+    }
+    .content{
+        display:flex;
+        gap:20px;
+        padding:20px;
+    }
+    .ingredients, .instructions{
+        border:1px dashed #999;
+        padding:20px;
+    }
+    .ingredients{
+        width: 35%;
+    }
+    .instructions{
+        width:65%;
+    }
+    .ingredients h2, .instructions h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .ingredients ul{
+        list-style: none;
+    }
+    .ingredients li{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .instructions ol{
+        padding-left: 20px;
+    }
+    .instructions li{
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+    </style>
+</head>
+<body>
+<div class="recipe">
+
+<div class="title">
+<h1>HOW TO COOK BEEF PILAU</h1>
+</div>
+
+<img src="./images/beefpilau.jpeg">
+
+<div class="info">
+<p><strong>SERVES:</strong>4|<strong>COOK:</strong>50 MINUTES|<strong>TOTAL:</strong>1 HOUR 10 MINIUTES</p>
+</div>
+    
+<div class="content">
+
+<div class="ingredients">
+<h2>INGREDIENTS</h2>
+<ul>
+    <li>2 cups of rice</li>
+    <li>500g beef, cut into cubes</li>
+    <li>1 onion, chopped</li>          
+    <li> 2 cloves garlic, minched</li> 
+    <li>1 tsp grated ginger</li>
+    <li>2 tsp pilau masala</li>
+    <li>2 tbsp cooking oil</li>
+    <li>4 cups water</li>
+    <li>Salt to taste</li>
+</ul>
+</div>
+    
+<div class="instructions">
+<h2>INSTRUCTIONS</h2>
+<ol>
+    <li>Heat the cooking oil in a large pot.</li>
+    <li>Fry the chopped onion until golden brown.</li>
+    <li>Add the garlic and ginger, then cook for 1 minute.</li>
+    <li>Add the beef and cook until it is browned.</li>
+    <li>Stir in the pilau masala and salt.</li>
+    <li>Add the rice and mix well with the beef and spices.</li>
+    <li>Pour in the water and bring it to a boil.</li>
+    <li>Reduce the heat, cover the pot, and cook until the rice
+       is tender and the water has been absorbed.</li>
+   <li>Fluff the pilau with a fork and serve hot.</li>
+   <p><em>Serve with kachumbari &#127869;</em></p>
+</ol>
+</div>
+</div>
+</div>
+
+</body>
+</html>
